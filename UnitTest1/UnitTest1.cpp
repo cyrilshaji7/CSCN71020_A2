@@ -34,28 +34,28 @@ namespace UnitTest1
 
         TEST_METHOD(setlength_test1)
         {
-            int input = 0, length = 1;
+            int input = 0, length = 1, expected = 1;
 
             // calling the function setLength
             setLength(input, &length);
-            Assert::AreEqual(length, input);
+            Assert::AreEqual(length, expected);
         }
 
         TEST_METHOD(setlength_test2)
         {
-            int input = 15, length = 1;
+            int input = 15, length = 1, expected = 15;
             // calling the function setLength
             setLength(input, &length);
-            Assert::AreEqual(length, input);
+            Assert::AreEqual(length, expected);
         }
 
         TEST_METHOD(setlength_test3)
         {
-            int input = 100, length = 1;
+            int input = 102, length = 1, expected = 1;
 
             // calling the function setLength
             setLength(input, &length);
-            Assert::AreEqual(length, input);
+            Assert::AreEqual(length, expected);
         }
 
         TEST_METHOD(setwidth_test1)
