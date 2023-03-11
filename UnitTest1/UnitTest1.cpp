@@ -60,29 +60,29 @@ namespace UnitTest1
 
         TEST_METHOD(setwidth_test1)
         {
-            int input = 0, width = 1;
+            int input = 0, width = 1, expected = 1;
 
             // calling the function setWidth
             setWidth(input, &width);
-            Assert::AreNotEqual(input, width);
+            Assert::AreEqual(expected, width);
         }
 
         TEST_METHOD(setwidth_test2)
         {
-            int input = 100, width = 1;
+            int input = 100, width = 1, expected = 1;
 
             // calling the function setWidth
             setWidth(input, &width);
-            Assert::AreNotEqual(input, width);
+            Assert::AreEqual(expected, width);
         }
 
         TEST_METHOD(setwidth_test3)
         {
-            int input = 34, width = 1;
+            int input = 34, width = 1, expected = 34;
 
             // calling the function setWidth
             setWidth(input, &width);
-            Assert::AreEqual(input, width);
+            Assert::AreEqual(expected, width);
         }
     };
 }
